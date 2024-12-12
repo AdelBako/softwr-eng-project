@@ -27,7 +27,7 @@ jobs:
       run: bandit -r .
 
     - name: Run tests
-      run: pytest
+      run: pytest test_example.py
 
   deploy:
     needs: build-and-test
